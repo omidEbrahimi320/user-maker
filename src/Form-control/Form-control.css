@@ -1,0 +1,29 @@
+.form-control {
+    width: 45%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 25px 35px;
+    border-radius: 7px;
+}
+
+.name-control,
+.age-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.age-control {
+    margin-top: 12px;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #494949;
+}
+
+.button {
+    margin-top: 30px;
+}
+
+.p-toast-message-text {
+    margin-right: 15px;
+}
