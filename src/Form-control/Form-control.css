@@ -1,8 +1,8 @@
 .form-control {
-    width: 45%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     padding: 25px 35px;
-    border-radius: 7px;
+    /* border-radius: 7px; */
 }
 
 .name-control,
@@ -26,4 +26,12 @@ label {
 
 .p-toast-message-text {
     margin-right: 15px;
+}
+
+@media (min-width: 767px) {
+    .form-control {
+        width: 45%;
+        border-radius: 7px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
 }

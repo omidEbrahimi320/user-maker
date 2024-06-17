@@ -10,8 +10,8 @@ let counter = 0;
 
 const FormControl = (props, event) => {
   // const [users, setuser] = useState([]);
-  const [name, setName] = useState("");
-  const [age, setAge] = useState();
+  const [name, setName] = useState('');
+  const [age, setAge] = useState('');
   const today = new Date().toLocaleDateString("fa-IR");
   const toastBottomRight = useRef(null);
   
@@ -30,7 +30,7 @@ const FormControl = (props, event) => {
       toastData = {
         severity: 'error',
         summary: 'خطا',
-        detail: 'لطفا مثل آدم فیلد ها را پر کنید'
+        detail: 'لطفا فیلد ها را پر کنید'
       }
     } else {
       props.getUsers(newUser);
@@ -40,7 +40,7 @@ const FormControl = (props, event) => {
       toastData = {
         severity: 'success',
         summary: 'موفقیت',
-        detail: 'user با موفقیت ایجاد شد'
+        detail: 'کاربر با موفقیت ایجاد شد'
       }
     }
     toastBottomRight.current.show({

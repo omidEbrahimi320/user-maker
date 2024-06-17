@@ -1,17 +1,20 @@
 .user-table {
-    width: 45%;
-    border-radius: 7px;
-    display: flex;
-    flex-grow: 2;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    /* border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     margin-top: 25px;
-    border-radius: 7px;
+    padding: 0 35px;
 }
     
 .p-datatable-wrapper {
     width: 100%;
-    border-radius: 7px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
+    
+/* .p-datatable-table {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} */
 
 th {
     min-width: 120px;
@@ -27,4 +30,29 @@ th:last-child {
 
 td {
     text-align: start;
+}
+
+.p-datatable-emptymessage td {
+    visibility: hidden;
+}
+
+.p-datatable-emptymessage td::before {
+    content: 'کاربری وجود ندارد';
+    visibility: visible;
+    /* border: 1px solid #e5e7eb; */
+}
+
+@media (min-width: 767px) {
+    .user-table {
+        width: 45%;
+        border-radius: 7px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 0;
+    }
+
+    .p-datatable-wrapper {
+        /* width: 45%; */
+        border-radius: 7px;
+        box-shadow: none;
+    }
 }
